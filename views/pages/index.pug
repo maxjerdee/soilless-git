@@ -12,12 +12,14 @@ mixin article-small(title='We Failed',img_url='Thumbnail.jpg')
     p.article-title= title
 
 mixin article(title='We Failed',img_url='Article.jpg',category='Misc.',description='Yep')
-  a.black(href= 'article/' + title)
-    .row.article-wrapper
-      .col-sm-5
+  .row.article-wrapper
+    .col-sm-5
+      a.black(href= 'article/' + title)
         img.img-fluid.article-img(src='/images/'+img_url)
-      .col-md-7
+    .col-md-7
+      a(href= category)
         p.article-category= category
+      a.black(href= 'article/' + title)
         p.article-title= title
         p.article-description= description
 
@@ -49,8 +51,8 @@ block content
         p.section-header Recent Posts
         .hl
         .col.p-0
-          +article('7/1 - First Attempt at Hydroponics Failed','Article.jpg','Blog','After all our hard work setting up the system, we found ourselves in hot water (in more ways than one). The hot sun compromised our not-so-light proof system, as we observed bacterial growth and ultimately plant death. ')
-          +article('7/2 - Second Attempt at Hydroponics Failed','Article.jpg','Blog','After all our hard work setting up the system, we found ourselves in hot water (in more ways than one). The hot sun compromised our not-so-light proof system, as we observed bacterial growth and ultimately plant death. ')
+          +article('Blog #1 - 6/20','GrowAndLearn.jpg','Blog','My brother, Max, and I began this gardening adventure in early June. Sometime in mid-May our mom brought home 180 seed packs, which they were giving away in boxes at the local Stop and Shop. ')
+          +article('Blog #2 - 6/25 Germination','GerminationBlog.jpg','Blog','After all our hard work setting up the system, we found ourselves in hot water (in more ways than one). The hot sun compromised our not-so-light proof system, as we observed bacterial growth and ultimately plant death. ')
           +article('7/3 - Third Attempt at Hydroponics Failed','Article.jpg','Blog','After all our hard work setting up the system, we found ourselves in hot water (in more ways than one). The hot sun compromised our not-so-light proof system, as we observed bacterial growth and ultimately plant death. ')
       
       .col-md-4
