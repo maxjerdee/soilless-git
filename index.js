@@ -15,4 +15,16 @@ express()
   .get('/test', (req, res) => {
     res.render('pages/test')
   })
+  .get('/blog-1', (req, res) => {
+    res.render('pages/blog-1')
+  })
+  .get('/blog-2', (req, res) => {
+    res.render('pages/blog-2')
+  })
+  .get('/blog-3', (req, res) => {
+    res.render('pages/blog-3')
+  })
+  .get('/blog-4', (req, res) => {
+    res.render('pages/blog-4')
+  })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
