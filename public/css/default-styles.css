@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   justify-content: center;
 }
+  .figure-img {
+    max-width: 25% !important;
+  }
   .body-container {
     max-width: 800px;
     margin: auto;
