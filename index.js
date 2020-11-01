@@ -27,4 +27,13 @@ express()
   .get('/blog-4', (req, res) => {
     res.render('pages/blog-4')
   })
+  .get('/Article', (req, res) => {
+    res.render('pages/article')
+  })
+  .get('/Blog', (req, res) => {
+    res.render('pages/blog')
+  })
+  .get('/About-Us', (req, res) => {
+    res.render('pages/about-us')
+  })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
