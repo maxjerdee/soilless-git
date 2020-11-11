@@ -1,5 +1,17 @@
 extends article-template 
 
+mixin article(title='We Failed',link='/',img_url='Article.jpg',category='Misc.',description='Yep')
+  .row.article-wrapper
+    .col-sm-5
+      a.black(href= link)
+        img.img-fluid.article-img(src='/images/'+img_url)
+    .col-md-7
+      a(href= category)
+        p.article-category= category
+      a.black(href= link)
+        p.article-title= title
+        p.article-description= description
+
 block article-content
   
   p.section-header Articles:
