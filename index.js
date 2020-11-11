@@ -30,6 +30,9 @@ express()
   .get('/blog-5', (req, res) => {
     res.render('pages/blog-5')
   })
+  .get('/blog-6', (req, res) => {
+    res.render('pages/blog-6')
+  })
   .get('/Article', (req, res) => {
     res.render('pages/article')
   })
